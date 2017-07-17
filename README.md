@@ -58,7 +58,7 @@ Execute the module
 var result = sung_merge_json(user_input_data, default_values)
 ```
 
-Check the recult
+Check the result
 ```
 console.log(result)
 { name: 'Sung',
