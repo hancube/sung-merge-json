@@ -3,7 +3,7 @@ Sung-Merge-JSON merges two JSONs deeply inside the object
 
 ## Specs
 * It merges two JSONs in multiple depth levels of the Object
-* When each item has the value on a samy key, it takes the value from the first JSON
+* When both JSON has the value on a samy key, it takes the value from the first JSON
 * Array will be treated as a value. Array will be overrided with the value in the first JSON Object
 * You can use it when you need to add up the default values into the user input data
 * Second values will be used only when the first values are undefined or null
