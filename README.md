@@ -1,9 +1,9 @@
 ## Overview
-Sung-Merge-JSON merges two JSONs
+Sung-Merge-JSON merges two JSONs deeply inside the object
 
 ## Specs
-* It merges two JSONs in multiple depth of Objecs
-* When each JSON has the value on a samy key, it takes the value from the first JSON
+* It merges two JSONs in multiple depth levels of the Object
+* When each item has the value on a samy key, it takes the value from the first JSON
 * Array will be treated as a value. Array will be overrided with the value in the first JSON Object
 * You can use it when you need to add up the default values into the user input data
 * Second values will be used only when the first values are undefined or null
@@ -21,7 +21,7 @@ node -c
 
 Import module
 ```
-var sung_merge_json = require('sung-merge-json')
+var merge = require('sung-merge-json')
 ```
 
 Define two JSONs to merge
@@ -56,7 +56,7 @@ var default_values = {
 
 Execute the module
 ```
-var result = sung_merge_json(user_input_data, default_values)
+var result = merge(user_input_data, default_values)
 ```
 
 Check the result
