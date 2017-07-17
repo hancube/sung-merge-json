@@ -8,8 +8,7 @@
   "bugs": {
     "url": "http://github.com/outsideris/passport-me2day/issues"
   },
-  "main": "./sung-merge-json",
-  "engines": { "node": ">= 0.4.0" },
+  "main": "./index",
   "licenses": [ {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/MIT" 
