@@ -1,0 +1,18 @@
+{
+  "name": "sung-merge-json",
+  "version": "1.0.0",
+  "description": "merge json with multipl depth",
+  "author": { "name": "Sungok Lim", "email": "sol1000@hotmail.com"},
+  "contributors": [
+  ],
+  "bugs": {
+    "url": "http://github.com/outsideris/passport-me2day/issues"
+  },
+  "main": "./sung-merge-json",
+  "engines": { "node": ">= 0.4.0" },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "keywords": ["merge json", "merge json with multipl depth"]
+}
