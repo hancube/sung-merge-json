@@ -109,6 +109,6 @@ Array will be overrided with the value in the first JSON Object
 ```
 console.log(result.aboutme.friends.lovers)
 [ { name: 'ping', area: 'NY' },
-  { name: 'ching' },
-  { area: 'San Francisco' } ]
+  { name: 'ching', area: 'Her Place' },
+  { area: 'San Francisco', name: 'My Lover' } ]
 ```
