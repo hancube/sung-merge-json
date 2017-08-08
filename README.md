@@ -1,5 +1,5 @@
 ## Overview
-Sung-Merge-JSON merges two JSONs deeply inside the object
+Sung-Merge-JSON merges two JSONs deeply inside the object. It will merge each item in the array with first default object of the array in the second paramenter.
 
 ## Specs
 * It merges two JSONs in multiple depth levels of the Object
