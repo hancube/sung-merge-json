@@ -7,6 +7,7 @@ Sung-Merge-JSON merges two JSONs deeply inside the object
 * Array will be treated as a value. Array will be overrided with the value in the first JSON Object
 * You can use it when you need to add up the default values into the user input data
 * Second values will be used only when the first values are undefined or null
+* Define representative object to set the default values to the all items in array
 
 ## Install
 ```
@@ -34,7 +35,18 @@ var user_input_data = {
 		"favorite_food": "korean",
 		"friends": {
 			"second": "hong",
-			"lovers": ["ping", "ching"]
+			"lovers": [
+				{
+					"name": "ping",
+					"area": "NY"
+				}, 
+				{
+					"name": "ching"
+				}, 
+				{
+					"area": "San Francisco"
+				}
+			]
 		}
 	}
 }
@@ -48,7 +60,12 @@ var default_values = {
 		"friends": {
 			"best": "sung",
 			"others": ["song", "pong"],
-			"lovers": ["mi", "mom"]
+			"lovers": [
+				{
+					"name": "My Lover",
+					"area": "Her Place"
+				}
+			]
 		}
 	}
 }
@@ -82,7 +99,7 @@ console.log(result.aboutme)
 { favorite_food: 'korean',
   friends:
    { second: 'hong',
-     lovers: [ 'ping', 'ching' ],
+     lovers: [ [Object], [Object], [Object] ],
      best: 'sung',
      others: [ 'song', 'pong' ] },
   favorite_music: 'pop' }
@@ -91,5 +108,7 @@ console.log(result.aboutme)
 Array will be overrided with the value in the first JSON Object
 ```
 console.log(result.aboutme.friends.lovers)
-[ 'ping', 'ching' ]
+[ { name: 'ping', area: 'NY' },
+  { name: 'ching' },
+  { area: 'San Francisco' } ]
 ```
