@@ -1,6 +1,6 @@
 {
   "name": "sung-merge-json",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "merge json with multipl depth",
   "author": { "name": "Sungok Lim", "email": "sol1000@hotmail.com"},
   "contributors": [
